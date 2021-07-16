@@ -12,15 +12,21 @@ def add_upvote(obj, user):
     upvote, is_created = Upvote.objects.get_or_create(
         content_type=obj_type, object_id=obj.id, user=user
     )
-    Post.objects.filter(id=obj.id).update(amount_of_upvotes=F("amount_of_upvotes") + 1)
+    Post.objects.filter(id=obj.id).update(
+        amount_of_upvotes=F("amount_of_upvotes") + 1
+    )
     return upvote
 
 
 def remove_upvote(obj, user):
     """Remove Upvote from post."""
     obj_type = ContentType.objects.get_for_model(obj)
-    Upvote.objects.filter(content_type=obj_type, object_id=obj.id, user=user).delete()
-    Post.objects.filter(id=obj.id).update(amount_of_upvotes=F("amount_of_upvotes") - 1)
+    Upvote.objects.filter(
+        content_type=obj_type, object_id=obj.id, user=user
+    ).delete()
+    Post.objects.filter(id=obj.id).update(
+        amount_of_upvotes=F("amount_of_upvotes") - 1
+    )
 
 
 # def is_fan(obj, user) -> bool:

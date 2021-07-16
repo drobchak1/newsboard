@@ -1,4 +1,4 @@
-from .models import Post, Upvote
+from .models import Post
 from .serializers import PostSerializer
 from rest_framework import generics, permissions
 from rest_framework import viewsets
