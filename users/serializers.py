@@ -7,6 +7,7 @@ class UserSerializer(serializers.ModelSerializer):
     User = get_user_model()
     posts = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
     comments = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
+
     class Meta:
         model = User
-        fields = '__all__'
+        fields = "__all__"
