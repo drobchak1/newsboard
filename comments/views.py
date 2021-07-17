@@ -7,7 +7,7 @@ from rest_framework import viewsets
 
 
 class CommentViewSet(viewsets.ModelViewSet):
-    """CRUD operations on posts and upvotes"""
+    """CRUD operations on posts and comments"""
 
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
