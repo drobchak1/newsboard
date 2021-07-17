@@ -11,7 +11,7 @@ python manage.py runserver
 **/posts/<int:pk>** - CRUD operations on posts instance  
 **/posts/<int:pk>/upvote/** - Upvote post  
 **/posts/<int:pk>/unupvote/** - Remove upvote from post  
-**/comments/** - post-list and post-creation  
+**/comments/** - comment-list and comment-creation  
 **/comments/<int:pk>** - CRUD operations on comments instance  
 **/token/** - JWT token acquiring  
 **/token/refresh/** - JWT token refresh  
