@@ -16,6 +16,9 @@ python manage.py runserver
 **/token/** - JWT token acquiring  
 **/token/refresh/** - JWT token refresh  
 
+## Heroku: 
+Link to heroku development server: https://newsboard-developstoday.herokuapp.com/  
+
 ## Postman:  
 There is a Postman collection available for testing purposes:  
 
