@@ -8,11 +8,11 @@ python manage.py runserver
 ## Main endpoints:  
 **/admin/** - django administration  
 **/posts/** - post-list and post-creation  
-**/posts/<int:pk>** - CRUD operations on post`s instance  
+**/posts/<int:pk>** - CRUD operations on posts instance  
 **/posts/<int:pk>/upvote/** - Like post  
 **/posts/<int:pk>/unupvote/** - Unlike post  
 **/comments/** - post-list and post-creation  
-**/comments/<int:pk>** - CRUD operations on comment`s instance  
+**/comments/<int:pk>** - CRUD operations on comments instance  
 **/token/** - JWT token acquiring  
 **/token/refresh/** - JWT token refresh  
 
