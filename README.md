@@ -20,7 +20,7 @@ python manage.py runserver
 Link to heroku development server: https://newsboard-developstoday.herokuapp.com/  
 
 ## Postman:  
-There is a Postman collection available for testing purposes:  
+There is a Postman collection available for testing purposes: https://www.getpostman.com/collections/4e2c5e8b54718f4f57f9  
 
 ## Tests:  
 There are tests that check post_creation with JWT-token, post-list view and comment-list view.  
